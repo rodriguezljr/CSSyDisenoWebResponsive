@@ -1,0 +1,234 @@
+
+body{
+  background: #02010a;
+  font-family: "Dancing Script";
+  -webkit-animation: slidein 1.5s;
+  animation: slidein 1.5s;
+  margin: 2%
+}
+#contenido{
+  max-width: 900px;
+  width: 100%;
+  margin:0 auto;
+}
+#cabecera{
+  background-color: #5b7989;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    height: 10%;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+
+}
+#cabecera h1{
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  width: 70%;
+  margin: 10px;
+}
+#cabecera .menu{
+  margin: 20px;
+}
+#cabecera .menu a{
+  color:white;
+}
+#cabecera .menu a.pagina-actual{
+  text-decoration:none;
+}
+#imagen-central{
+  text-align: center;
+  background: #82c3a6;
+}
+#imagen-central img{
+  margin: 2%;
+  width: 95%;
+  box-shadow: 2px 2px 2px 2px  #02010a;
+}
+#imagen-secundaria{
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  background-color: #d5c75f;
+}
+#imagen-secundaria a{
+    width: 50%;
+    text-align: center;
+    margin-bottom:10px;
+}
+#imagen-secundaria img{
+  width: 96%;
+  margin:2%;
+  transition: transform,1.5s;
+  box-shadow: 2px 2px 2px 2px  #02010a;
+}
+#imagen-secundaria img.paisajes:hover{
+transform: rotate(10deg);
+box-shadow: 1px 1px 1px 1px  #82c3a6;
+border: 2px solid;
+}
+#imagen-secundaria img.retratos:hover{
+transform: translate(20px, -5px);
+box-shadow: 1px 1px 1px 1px  #82c3a6;
+border: 2px solid;
+}
+#pie-de-pagina{
+  background: #C6d5c5;
+  display:flex;
+  flex-direction: row;
+  align-items: top;
+  border-radius: 0px 0px 10px 10px;
+}
+#pie-de-pagina .elementos-footer{
+  width: 25%;
+}
+#pie-de-pagina ul{
+  list-style-type:none;
+  vertical-align: top;
+}
+#galeria{
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  background-color: #d5c75f;
+}
+#galeria img{
+  width:  30%;
+  margin: 1.6%;
+  box-shadow: 2px 2px 2px 2px  #02010a;
+}
+#galeria img:nth-child(1){
+  filter: blur(10px);
+  -webkit-filter: blur(10px;)
+}
+#galeria img:nth-child(even){
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+#galeria img:nth-child(3){
+  filter: sepia(90%);
+  -webkit-filter: sepia(90%);
+}
+@-webkit-keyframes slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 2%;
+  }
+}
+@media screen and (max-width: 900px){
+  body{
+    background: #02010a;
+    font-family: "Dancing Script";
+    -webkit-animation: slidein 1.5s;
+    animation: slidein 1.5s;
+    margin: 2%;
+  }
+  #contenido{
+    max-width: 900px;
+    width: 100%;
+    margin:0 auto;
+  }
+  #cabecera{
+    background-color: #5b7989;
+      border-radius: 10px 10px 0px 0px;
+      display: flex;
+      height: auto;
+      flex-flow: column;
+      -webkit-flex-flow: column;
+      text-align: center;
+
+  }
+  #cabecera h1{
+    color: white;
+    text-shadow: 2px 2px #02010a;
+    width: 100%;
+    margin: 10px;
+  }
+  #cabecera .menu{
+    margin: 10px;
+  }
+  #cabecera .menu a{
+    color:white;
+  }
+  #cabecera .menu a.pagina-actual{
+    text-decoration:none;
+  }
+  #imagen-central{
+    text-align: center;
+    background: #82c3a6;
+  }
+  #imagen-central img{
+    margin: 2%;
+    width: 95%;
+  }
+  #imagen-secundaria{
+    display: flex;
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    align-items: center;
+    background-color: #d5c75f;
+  }
+  #imagen-secundaria a{
+      width: 100%;
+      text-align: center;
+  }
+  #imagen-secundaria img{
+    width: 95%;
+    margin:2%;
+    transition: transform,1.5s;
+  }
+  #imagen-secundaria img.paisajes:hover{
+  transform: rotate(10deg);
+  box-shadow: 1px 1px 1px 1px  #82c3a6;
+  border: 2px solid;
+  }
+  #imagen-secundaria img.retratos:hover{
+  transform: translate(20px, -5px);
+  box-shadow: 1px 1px 1px 1px  #82c3a6;
+  border: 2px solid;
+  }
+  #pie-de-pagina{
+    background: #C6d5c5;
+    display:flex;
+    flex-flow:column;
+    -webkit-flex-flow:column;
+    align-items: top;
+    border-radius: 0px 0px 10px 10px;
+  }
+  #pie-de-pagina .elementos-footer{
+    width: 100%;
+  }
+  #pie-de-pagina ul{
+    list-style-type:none;
+    vertical-align: top;
+  }
+  #galeria{
+    display: flex;
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    align-items: center;
+    background-color: #d5c75f;
+  }
+  #galeria img{
+    width:  95%;
+    margin: 2%;
+  }
+  #galeria img:nth-child(1){
+    filter: blur(10px);
+    -webkit-filter: blur(10px;)
+  }
+  #galeria img:nth-child(even){
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+  }
+  #galeria img:nth-child(3){
+    filter: sepia(90%);
+    -webkit-filter: sepia(90%);
+  }
+  }
